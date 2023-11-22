@@ -20,7 +20,7 @@ class HomeBloc extends Bloc<HomeEvent, HomeState> {
       Fluttertoast.showToast(msg: p0.message, gravity: ToastGravity.TOP);
     },
     onConnectionStateChange: (p0) {
-      Fluttertoast.showToast(msg: "Successfully connected", gravity: ToastGravity.TOP);
+      Fluttertoast.showToast(msg: "Connection changed", gravity: ToastGravity.TOP);
     },
   );
   HomeBloc() : super(HomeState()) {
